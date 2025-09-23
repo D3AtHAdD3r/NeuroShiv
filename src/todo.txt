@@ -1,3 +1,0 @@
-1 - CMakeLists.txt:: create a dedicated function like find_package(CUDAToolkit REQUIRED), 
-later once project porting is completed.
-
