@@ -17,6 +17,8 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/extern/eigen
 )
 
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
 # Link directories for CUDA and cuDNN libraries
 link_directories(
     ${CUDA_TOOLKIT_ROOT_DIR}/lib/x64  # Standard CUDA libs
@@ -28,6 +30,11 @@ link_directories(
 add_executable(NeuroShiv
     src/main.cpp
     src/cuda_test.cu
+    src/cuda_kernels.cu
+    src/utils.cpp
+    src/GPUPass.cu
+    src/Layer_b.cpp
+    src/Network_b.cpp
 )
 
 # Link libraries: CUDA runtime, CUBLAS, and cuDNN

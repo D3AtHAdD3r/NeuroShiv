@@ -1,3 +1,14 @@
 1 - CMakeLists.txt:: create a dedicated function like find_package(CUDAToolkit REQUIRED), 
 later once project porting is completed.
 
+2 - Optimizations:: 
+- all over the place
+
+3 - Addons::
+- add more neurons support(start with ReLU,LeakyReLU)
+- Learning Rate Scheduling: Reduce the learning rate over time to stabilize training and avoid dips.
+- Dropout: Add dropout (e.g., 20%) to prevent overfitting and improve generalization.
+- Confusion Matrix: Analyze which digits are misclassified to identify specific weaknesses.
+- Add momentum/Adam optimizer for even faster training.
+- Transition from dense MLP → simple CNN
+
