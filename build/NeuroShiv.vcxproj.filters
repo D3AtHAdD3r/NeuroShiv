@@ -4,9 +4,24 @@
     <ClCompile Include="F:\WorkSpace\Projects\NeuroShiv\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="F:\WorkSpace\Projects\NeuroShiv\src\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\WorkSpace\Projects\NeuroShiv\src\Layer_b.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\WorkSpace\Projects\NeuroShiv\src\Network_b.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="..\src\cuda_test.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\cuda_kernels.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\GPUPass.cu">
       <Filter>Source Files</Filter>
     </CudaCompile>
   </ItemGroup>
