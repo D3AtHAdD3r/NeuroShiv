@@ -42,6 +42,4 @@ public:
     virtual cudnnActivationMode_t getCudnnActivationMode() const = 0;
 };
 
-
-
 #endif // ACTIVATION_HPP

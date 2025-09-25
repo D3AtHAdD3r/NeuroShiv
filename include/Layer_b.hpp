@@ -58,5 +58,4 @@ private:
 	const Activation* activation_;      ///< Pointer to activation function (owned externally)
 };
 
-
 #endif // LAYER_B_HPP

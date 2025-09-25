@@ -6,6 +6,7 @@
 #include"cuda_kernels.h"
 #include<iostream>
 
+
 namespace cuda_kernels {
     //CUDA kernel for cross-entropy loss
     __global__ void crossEntropyLossKernel(const double* output, const double* target, double* loss, int n)

@@ -34,5 +34,4 @@ namespace cuda_kernels {
 	__global__ void debugPrint_kernel(const double* data, int n);
 }
 
-
 #endif

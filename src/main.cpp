@@ -17,10 +17,10 @@ int main()
 {
     std::cout << "-----------program started----------\n";
     std::vector<int> sizes = {784, 30, 10};
-    std::string train_images = "../assets/data_msint/train-images-idx3-ubyte";
-    std::string train_labels = "../assets/data_msint/train-labels-idx1-ubyte";
-    std::string test_images = "../assets/data_msint/t10k-images-idx3-ubyte";
-    std::string test_labels = "../assets/data_msint/t10k-labels-idx1-ubyte";
+    std::string train_images = "../assets/mnist_dataset/train-images-idx3-ubyte";
+    std::string train_labels = "../assets/mnist_dataset/train-labels-idx1-ubyte";
+    std::string test_images = "../assets/mnist_dataset/t10k-images-idx3-ubyte";
+    std::string test_labels = "../assets/mnist_dataset/t10k-labels-idx1-ubyte";
 
     auto training_data = load_mnist_training(train_images, train_labels, 65000);
     if (training_data.empty())

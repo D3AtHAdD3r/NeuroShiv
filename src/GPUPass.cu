@@ -9,7 +9,6 @@
 #include <iomanip>
 
 
-
 double GPUPass::compute_mse_lossGPU(const Eigen::VectorXd& output, const Eigen::VectorXd& target) {
     int n = output.size();
     if (n != target.size()) {

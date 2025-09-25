@@ -1,23 +1,60 @@
-#CMake build directories and artifacts
-build/ Debug/ Release/ CMakeFiles/ cmake_install.cmake CMakeCache.txt Makefile *.cbp *.cmake
+# ---- CMake build directories ----
+build/
+[Cc]MakeCache.txt
+[Cc]MakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
 
-#Executables and binaries
-*.exe *.out *.app
+# ---- Configurations (multi-config generators like MSVC) ----
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+out/
 
-#Object files and libraries
-*.o *.obj *.a *.lib *.so *.dll
+# ---- Binaries ----
+*.exe
+*.out
+*.app
 
-#VSCode settings and cache
-.vscode/ *.code-workspace .cache/
+# ---- Object files and libs ----
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
 
-#Temporary files
-*.swp *~ *.bak *.tmp
+# ---- IDE / Editor files ----
+.vscode/
+*.code-workspace
+.idea/
+*.suo
+*.user
+*.userossc
+*.sln
+*.VC.db
+*.VC.opendb
 
-#External dependencies (uncomment if you don't want to commit Eigen)
-#extern/eigen/
+# ---- Temporary / cache ----
+*.swp
+*~
+*.bak
+*.tmp
+.cache/
+*.log
 
-#Miscellaneous
-.DS_Store *.log
+# ---- macOS / Windows cruft ----
+.DS_Store
+Thumbs.db
 
-# Don't ignore .gitignore itself!
+# ---- Optional: external deps (uncomment if needed) ----
+# extern/eigen/
+
+# ---- Keep gitignore visible ----
 !.gitignore

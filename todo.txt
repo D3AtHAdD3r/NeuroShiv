@@ -5,7 +5,7 @@ later once project porting is completed.
 - all over the place
 
 3 - Addons::
-- add more neurons support(start with ReLU,LeakyReLU)
+- add more neurons support(start with ReLU,LeakyReLU,softmax)
 - Learning Rate Scheduling: Reduce the learning rate over time to stabilize training and avoid dips.
 - Dropout: Add dropout (e.g., 20%) to prevent overfitting and improve generalization.
 - Confusion Matrix: Analyze which digits are misclassified to identify specific weaknesses.

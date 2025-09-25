@@ -1,6 +1,5 @@
 #include"utils.hpp"
 
-
 void displayMiniBatch(const std::vector<std::pair<Eigen::VectorXd, Eigen::VectorXd>>& mini_batch) {
     std::cout << "Mini-batch contents:\n";
     for (size_t i = 0; i < mini_batch.size(); ++i) {

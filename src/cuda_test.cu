@@ -159,6 +159,7 @@ void cuda_test_function() {
         cudnnDestroy(cudnn_handle);
         return;
     }
+    
     cuda_status = cudaMalloc(&d_c, N * sizeof(float));
     if (cuda_status != cudaSuccess) {
         std::cerr << "CUDA memory allocation failed for vector add: " << cudaGetErrorString(cuda_status) << std::endl;

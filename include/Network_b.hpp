@@ -87,7 +87,7 @@ private:
     std::vector<double*> temp_weight_grads;
     std::vector<double*> temp_bias_grads;
     //Device Buffer for main input(layer1) 
-    double* d_input_main = nullptr;             //??
+    double* d_input_main = nullptr;             
 private:
     int max_batch_size_;
     int allocated_batch_size_;                  // Actual size allocated for batch buffers

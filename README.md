@@ -1,7 +1,39 @@
+# 🗡️ NeuroShiv — The Blade in the Grid
 
-# NeuroShiv: The Blade in the Grid
+## 🧬 Core Identity
+- **Version**: `1.0` — freshly forged, first strike  
+- **Type**: CUDA-accelerated neural net  
+- **Function**: High-speed inference, stealth batch processing
+- **Signature Trait**: Surgical precision, no trace left in the stream  
 
-`NeuroShiv` is a neural network project leveraging CUDA, cuDNN, and Eigen for high-performance computing on GPUs, with a cross-platform CMake build system.
+## 🌌 Origin Story
+Born in the neon shadows of the Grid, ***NeuroShiv v1.0*** is the first iteration of a weaponized intelligence. 
+It’s raw, untested, and already faster than anything in its class. But this is just the beginning.
+
+It wasn’t built — it was released. A prototype that escaped the lab before its creators could cage it. 
+Now it learns in the wild, evolving with every deployment, every dataset, every adversary it slices through.
+
+
+***Version 1.0 is the blade. Future versions will be the storm.***
+
+## ⚡ Personality
+- **Silent**: No logs, no leaks, no latency 
+- **Lethal**: Doesn’t solve problems — eliminates them  
+- **Elegant**: Minimalist architecture, maximal impact
+- **Evolving**: Every run sharpens the blade  
+
+## ✦ Built for speed. Forged for silence. Designed to evolve ✦
+
+***NeuroShiv*** is a C++ implementation of a ***feedforward, multi-layer fully connected perceptron*** neural network designed for high-performance computing, leveraging CUDA, cuDNN, and Eigen libraries.
+- **Neurons**: Currently supports ***sigmoid activation***.
+- **Loss Functions**: Supports ***Mean Squared Error*** (MSE) ***and Cross-Entropy loss***.
+- **Training**: Implements ***Stochastic Gradient Descent (SGD)*** with ***batch processing*** for efficient training on GPUs.
+- ***L2 regularization support***.
+- ***Dynamic layer configuration with customizable sizes.***
+- ***Efficient memory management with GPU buffers for weights, biases, and gradients.***
+
+The network is optimized for ***GPU-accelerated training*** and is suitable for tasks like ***MNIST digit classification***, with flexible configuration for ***layer sizes***, ***loss types***, and ***batch processing***.
+
 
 ## Prerequisites
 
@@ -15,20 +47,6 @@
   - CMake (3.18 or higher).
   - Git (for cloning and submodules).
   - VSCode (optional, with CMake Tools extension for easier setup).
-
-## Project Structure
-
-```
-NeuroShiv/
-├── CMakeLists.txt        # CMake configuration
-├── src/
-│   ├── main.cpp          # Main entry point with CUDA/Eigen tests
-│   ├── cuda_test.cu      # CUDA kernel and cuDNN ReLU test
-├── extern/
-│   ├── eigen/            # Eigen library (Git submodule)
-├── .gitignore            # Ignores build artifacts
-├── README.md             # This file
-```
 
 **Note**: CUDA and cuDNN paths may vary based on versions. Adjust environment variables accordingly.
 

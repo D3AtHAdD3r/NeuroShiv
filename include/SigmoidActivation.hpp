@@ -27,5 +27,4 @@ public:
     }
 };
 
-
 #endif // SIGMOID_ACTIVATION_HPP

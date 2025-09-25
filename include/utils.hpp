@@ -9,6 +9,7 @@
 #include <iomanip>
 #include <string>
 
+
 void displayMiniBatch(const std::vector<std::pair<Eigen::VectorXd, Eigen::VectorXd>>& mini_batch);
 
 void displayVectorXd(const Eigen::VectorXd& vec, size_t max_elements = 0);

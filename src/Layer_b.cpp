@@ -1,7 +1,6 @@
 #include"Layer_b.hpp"
 
 
-
 Layer_b::Layer_b(int num_inputs, int num_neurons, const Activation* activation, GPUPass* gpuCtx, unsigned int seed)
 	: num_inputs_(num_inputs), num_neurons_(num_neurons),
 	weights_(num_neurons, num_inputs), biases_(num_neurons),

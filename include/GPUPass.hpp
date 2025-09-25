@@ -35,6 +35,7 @@
     } \
 }
 
+
 class GPUPass {
 public:
     // Constructor initializes cuBLAS and cuDNN handles

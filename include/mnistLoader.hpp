@@ -32,7 +32,6 @@ int main() {
 }
 */
 
-
 // Helper function to reverse bytes (MNIST files are big-endian)
 int32_t reverse_int(int32_t i) {
     return ((i & 0xFF) << 24) | ((i >> 8 & 0xFF) << 16) | ((i >> 16 & 0xFF) << 8) | (i >> 24 & 0xFF);

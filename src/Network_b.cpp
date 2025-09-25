@@ -155,6 +155,7 @@ void Network_b::init_batch_buffers(int mini_batch_size)
         }
 
         // Allocate targets and temp deriv buffer
+        // Allocate d_temp_deriv_batch with a size sufficient to handle the largest layer in the network, not just the output layer(TODO: optimize- Dynamic Buffer Resizing)
         int output_size = sizes.back();
         int max_activ_size = output_size;
         for (size_t i = 1; i < sizes.size() - 1; ++i){
